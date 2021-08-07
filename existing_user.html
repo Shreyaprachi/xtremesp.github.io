@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Existing User
+        </title>
+        <script type="javascript/text">
+        function ValidateForm()
+        {
+            var y = document.forms["existing_user"]["card_no"].value ;
+            if(y == "")
+            {
+                alert("enter valid card_no");
+                return false;
+            }
+        }    
+        </script>
+    </head>
+    <body background="img2.jpg">
+        <marquee bgcolor="#ccccc" scrollamount = "10" loop = "-1" width = "100%">
+            <h3>
+                WELCOME TO BCCL !
+                </h3></marquee>
+                <center>
+                    <p>
+                        <h1>
+                            <font color = "magenta">Existing Patient</font>
+                            <hr width="40%" size="3"/>
+                            <center>
+                                <img src="img1.jpg" width="150" height="150">
+                            </center>
+                        </h1>    
+                    </p>
+                </center>
+                <hr width="50%" size="3"/>
+                <br>
+                <br>
+                <br>
+                <div class="container">
+                <center><form name="existing_user" method="POST" action="existing_user.php" onsubmit="return ValidateForm()">
+                <div class="form-input()">
+                    <b>
+                        Card-No. :&nbsp;&nbsp;
+                    </b>
+                    <input type="text" name="card_no" size="40" placeholder="Enter the card_no"/>
+                </div>
+                <br>
+                <br>
+                <input type="submit" name="submit" class="btn-login" style="background-color: wheat;color: black;padding: 5px;
+            font-size: 18px;border:2;padding: 8px;">
+            <br>
+            </center>
+                </form>
+                </div> 
+            </body>
+</html>

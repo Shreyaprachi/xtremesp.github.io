@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Signup Page
+        </title>
+        <script type="text/javascript">
+        function ValidateForm()
+        {
+            var x = document.forms["signup_form"]["name1"].value ;
+            if(x == "")
+            {
+                alert("enter your name first");
+                return false;
+            }
+            var y = document.forms["signup_form"]["userid"].value ;
+            if(y == "" || y.length <= 5)
+            {
+                alert("Enter userid correctly");
+            }
+            var z = document.forms["signup_form"]["degn"].value ;
+            if(z == "")
+            {
+                alert("Enter designation correctly");
+            }
+            var a = document.forms["signup_form"]["pass"].value ;
+            if(a == "" || a.length <8)
+            {
+                alert("Enter password correctly");
+                return false;
+            }
+            var b = document.forms["signup_form"]["pass1"].value ;
+            if(b != a)
+            {
+                alert("password didn't match");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body background="img2.jpg">
+        <marquee bgcolor="#ccccc" scrollamount = "10" loop = "-1" width = "100%">
+            <h3>
+                WELCOME TO BCCL !
+                </h3></marquee>
+                <center>
+                    <p>
+                        <h1>
+                            <font color = "magenta">Register Here!</font>
+                            <hr width="40%" size="3"/>
+                            <center>
+                                <img src="img1.jpg" width="150" height="150">
+                            </center>
+                            <h2>
+                                Enter your Credentials to Signup
+                            </h2>
+                        </h1>
+                    </p>
+                </center>
+        <div class = "container">
+            <center>
+                <form name = "signup_form" method="POST" action="confirm_signup.php" onsubmit="return ValidateForm()">
+                <div class="form_input">
+                    <b>
+                        Name
+                    </b><br><br>
+                    <input type="text" name="name1" size="40" placeholder="Enter your name">
+                </div>
+                <br>
+                <div class="form_input">
+                    <b>
+                        ID
+                    </b><br><br>
+                    <input type="text" name="userid" size="40" placeholder="Enter your ID">
+                </div>
+                <br>
+                <div class="form_input">
+                    <b>
+                        Designation
+                    </b><br><br>
+                    <input type="text" name="degn" size="40" placeholder="Enter your Designation">
+                </div>
+                <br>
+                <div class="form_input">
+                    <b>
+                        Password
+                    </b><br><br>
+                    <input type="password" name="pass" size="40" placeholder="Enter your Password">
+                </div>
+                <br>
+                <div class="form_input">
+                    <b>
+                        Confirm Password
+                    </b><br><br>
+                    <input type="password" name="pass1" size="40" placeholder="Enter your password again">
+                </div>
+                <br>
+                <input type="submit" value="submit" class="btn-login" style="
+                background-image: url(img2.jpg);color: black;padding: 5px;font-size: 18px;border: 2;padding: 8px;">
+            <br><br>    
+            </form>
+            </center>
+        </div>        
+    </body>
+</html>

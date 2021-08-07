@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login Page
+        </title>
+        <script type="javascript/text">
+        function ValidateForm()
+        {
+            var y = document.forms["login_form"]["userid"].value :
+            if (y == "" || y.length <= 5)
+            {
+                alert("Enter userid correctly");
+                return false;
+            }
+            var a = document.forms["login_form"]["pass"].value :
+            if (a == "" || a.length < 10)
+            {
+                alert("Enter Password correctly");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body background="img2.jpg">
+        <marquee bgcolor = "#ccccc" loop = "-1" scrollamount = "0" width = "100%">
+            <h2>
+                <center>
+                    <div class = "limiter">
+                        <div class="topnav" id = "myTopnav">
+                           <a href="homepage.html" class="active" style="text-decoration: none;">Home</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="about.html" class="active" style="text-decoration: none;">About</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="signup.html" class="active" style="text-decoration: none;">Register</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="login.html" class="active" style="text-decoration: none;">Signup</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="contact.html" class="active" style="text-decoration: none;">Contact Us</a>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       
+                        </div>
+                    </div>
+                </center>
+            </h2>
+    
+        </marquee>
+      <center>  <img src="img1.jpg" width="100" height="100">
+    </center>
+    <center>
+        <b>BHARAT COKING COAL LIMITED</b>
+        <br>
+        A mini Ratna Company
+        <br>
+        (A subsidary of Coal India Limited - A Maharatna Comapany)
+    </center>
+    <br>
+    <center>
+        <h1>
+            WELCOME TO LOGIN PAGE
+        </h1>
+    </center>
+    <hr width="50%" size="3"/>
+    <div class="container">
+        <center>
+            <form name="login_form" method="POST" action="validate_login.php" onsubmit="return ValidateForm">
+            <div class="form-input">
+                <b>
+                    USERID: &nbsp;&nbsp;&nbsp;<b>
+                        <input type="text" name="userid" size="40" placeholder="Enter Your Name">
+                    </b>
+            </div>
+            <div class="form-input">
+                <b>
+                    Password: &nbsp;&nbsp;&nbsp;<b>
+                        <input type="password" name="pass" size="40" placeholder="Enter Your Password">
+                    </b>
+                </b>
+            </div>
+            <br>
+            <br>
+            <input type="submit" type="submit" value="Login" class="btn-login" style = "background-image: url(img2.jpg);
+            color: black;padding: 5px;font-size: 18px;border: 2;padding: 8px;"
+            </b>
+            <br>
+            <br>
+            <a href="signup.html" class="txt1">
+                <h3>
+                    New User Registration
+                </h3>
+            </a>
+            </form>
+        </center>
+    </div>
+    </body>
+</html>

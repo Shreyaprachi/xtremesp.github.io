@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Online Registration Details
+        </title>
+    </head>
+    <body background="img2.jpg">
+        <marquee bgcolor="#ccccc" scrollamount = "10" loop = "-1" width = "100%">
+            <h3>
+                WELCOME TO BCCL !
+                </h3></marquee>
+                <center>
+                    <p>
+                        <h1>
+                            <font color = "magenta">Register Here!</font>
+                            <hr width="40%" size="3"/>
+                            <center>
+                                <img src="img1.jpg" width="150" height="150">
+                            </center>
+                            <h2>
+                                Enter your Credentials to REGISTER
+                            </h2>
+                        </h1>
+                    </p>
+                </center>
+        <div class = "container">
+            <center>
+                <form name="registration_form" method="POST" action="online_registration_details.php" onsubmit="return ValidateForm()">
+                <div class="form-input">
+                    <b>
+                        Card No.
+                    </b>
+                    <br>
+                    <br>
+                    <input type="text" name="cardno" size="40" placeholder="Enter your card No"/>
+                </div>
+                <br>
+                <div class="form-input">
+                    <b>Name</b>
+                    <br>
+                    <br>
+                    <input type="text" name="name3" size="40" placeholder="Enter your Name"/>
+                </div>
+                <br>
+                <div class="form-input">
+                    <b>Relationship</b>
+                    <br>
+                    <br>
+                    <input list="relation" name="relation" size="40" placeholder="Enter Relation">
+                    <datalist id = "relation">
+                        <option value="Self">Self</option>
+                        <option value="Spouse">Spouse</option>
+                        <option value="Father">Father</option>
+                        <option value="Mother">Mother</option>
+                        <option value="Son">Son</option>
+                        <option value="Daughter">Daughter</option>
+                    </datalist>
+                </div>
+                <br>
+                <div class="form-input">
+                        <b>Area</b>
+                        <br>
+                        <br>
+                        <input list="area" name="area" size="40" placeholder="Enter your Area">
+                        <datalist id="area">
+                            <option value="Area 1">Barora Area
+                            </option>
+                            <option value="Area 2">Block2 Area
+                            </option>
+                            <option value="Area 3">Govindpur Area
+                            </option>
+                            <option value="Area 4">Katras Area
+                            </option>
+                            <option value="Area 5">Sijua Area
+                            </option>
+                            <option value="Area 6">Kusunda Area
+                            </option>
+                            <option value="Area 7">Putki Area
+                            </option>
+                            <option value="Area 8">Bastacola Area
+                            </option>
+                            <option value="Area 9">Lodna Area
+                            </option>
+                            <option value="Area 10">Eastern Jharia Area
+                            </option>
+                            <option value="Area 11">chanch victoria Area
+                            </option>
+                            <option value="Area 13">Western Jharia Area
+                            </option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div class="form-input">
+                        <b>
+                            Department Consultance
+                        </b>
+                        <br>
+                        <br>
+                        <input list="depart" name="depart" size="40" placeholder="Enter your Department">
+                        <datalist id="depart">
+                            <option value="ENT">ENT
+                            </option>
+                            <option value="OPD">OPD
+                            </option>
+                            <option value="Pathology">
+                            </option>
+                            <option value="Skin">
+                            </option>
+                            <option value="Neuro">
+                            </option>
+                            <option value="Gynae">
+                            </option>
+                            <option value="Anaesth">
+                            </option>
+                            <option value="Radiology">
+                            </option>
+                            <option value="Paediatrics">
+                            </option>
+                            <option value="Dental">
+                            </option>
+                            <option value="Psychiatry">
+                            </option>
+                            <option value="Surgery">
+                            </option>
+                            <option value="Medicine">
+                            </option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <div class="form-input">
+                        <b>
+                            Registration Date
+                        </b>
+                        <br>
+                        <br>
+                        <input type="Date" name="date1" size="40" placeholder="Enter your Date"/>
+                    </div>
+                    <br>
+                    <input type="submit" value="submit" class="btn-login" style="background-color: white;
+                    color: black;padding: 5px;font-size: 18px;border:2;padding: 8px;">
+                    <br>
+                    <br>
+                </form>
+            </center>
+            </div>
+    </body>
+</html>

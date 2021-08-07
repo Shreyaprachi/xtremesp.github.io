@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Details
+        </title>
+        <script type="text/javascript">
+        function ValidateForm()
+        {
+            var x = document.forms["details_form"]["name2"].value ;
+            if(x == "")
+            {
+                alert("enter your name first");
+                return false;
+            }
+            var y = document.forms["details_form"]["cardno"].value ;
+            if(y == "")
+            {
+                alert("Enter cardno correctly");
+                return false;
+            }
+            var z = document.forms["details_form"]["area"].value ;
+            if(z == "")
+            {
+                alert("Enter area correctly");
+                return flase;
+            }
+            var a = document.forms["details_form"]["bg"].value ;
+            if(a == "")
+            {
+                alert("Enter blood group correctly");
+                return false;
+            }
+            var b = document.forms["details_form"]["age"].value ;
+            if(b == "")
+            {
+                alert("enter age first");
+                return false;
+            }
+            var c = document.forms["details_form"]["sex"].value ;
+            if(c == "")
+            {
+                alert("enter your sex first");
+                return false;
+            }
+        }
+        </script>
+    </head>
+    <body background="img2.jpg">
+        <marquee bgcolor="#ccccc" scrollamount = "10" loop = "-1" width = "100%">
+            <h3>
+                WELCOME TO BCCL !
+                </h3></marquee>
+                            <center>
+                                <img src="img1.jpg" width="150" height="150">
+                            
+                            <h2>
+                                Enter your details 
+                            </h2>
+                            </center>
+             <hr width="50%" size="3">
+             <div class="container">
+                 <center>
+                     <form name="details_form" method="POST" action="details_page.php" onsubmit="return validateForm()">
+                    <div class="form-input">
+                        <b>
+                            Name
+                        </b>
+                        <br>
+                        <br>
+                        <input type="text" name="name2" size="40" placeholder="Enter your name">
+                    </div>
+                    <br>
+                    <div class="form-input">
+                        <b>Area</b>
+                        <br>
+                        <br>
+                        <input list="area" name="area" size="40" placeholder="Enter your Area">
+                        <datalist id="area">
+                            <option value="Area 1">Barora Area
+                            </option>
+                            <option value="Area 2">Block2 Area
+                            </option>
+                            <option value="Area 3">Govindpur Area
+                            </option>
+                            <option value="Area 4">Katras Area
+                            </option>
+                            <option value="Area 5">Sijua Area
+                            </option>
+                            <option value="Area 6">Kusunda Area
+                            </option>
+                            <option value="Area 7">Putki Area
+                            </option>
+                            <option value="Area 8">Bastacola Area
+                            </option>
+                            <option value="Area 9">Lodna Area
+                            </option>
+                            <option value="Area 10">Eastern Jharia Area
+                            </option>
+                            <option value="Area 11">chanch victoria Area
+                            </option>
+                            <option value="Area 13">Western Jharia Area
+                            </option>
+                        </datalist>
+                    </div>
+                    <br>
+                    <b>Blood Group</b>
+                    <br>
+                    <br>
+                    <input list="bg" name="bg" size="40" placeholder="Enter your Blood group"/>
+                    <datalist id = "bg">
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </datalist>
+                </div>
+                <br><center>
+                <div class="form-input">
+                    <b>
+                        Age
+                    </b>
+                    <br>
+                    <br>
+                    <input type="text" name="age" size="40" placeholder="Enter your Age"/>
+                </div>
+                <br>
+                <div class="form-input">
+                    <b>
+                        Cardno
+                    </b>
+                    <br>
+                    <br>
+                    <input type="text" name="cardno" size="40" placeholder="Enter your Age"/>
+                </div>
+                <b>
+                    Sex
+                </b>
+                <br>
+                <br>
+                <input list="sex" name="sex" size="40" placeholder="Enter your sex"/>
+                <datalist id = "sex">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Others">Others</option>
+                </datalist>
+            </div>
+            <br>
+            <br>
+            <br>
+            <input type="submit" name="submit" class="btn-login" style="background-color: wheat;color: black;padding: 5px;
+            font-size: 18px;border:2;padding: 8px;">
+            <br>
+            </center>
+            <br>
+            <br>
+                    </form>
+                 </center>
+             </div>               
+             </body>
+             </html>
